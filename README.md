@@ -1,4 +1,4 @@
-# CS560Algorithms
+# CS560_Algorithms
 
-Spring 2017. Professor William Root.
+SDSU Spring 2017. Professor William Root.
 Contains all coursework and the variance.
