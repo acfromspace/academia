@@ -1,0 +1,16 @@
+﻿Build started 3/21/2014 3:57:17 PM.
+     1>Project "C:\Users\Andrew De Leon\Documents\CSIS Programming\Visual Studio 2012\Projects\Project4\Project4\Project4\Project4.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt Project4.cpp
+         Project4.cpp
+     1>c:\users\andrew de leon\documents\csis programming\visual studio 2012\projects\project4\project4\project4\project4.cpp(22): warning C4101: 'co2Distance' : unreferenced local variable
+     1>c:\users\andrew de leon\documents\csis programming\visual studio 2012\projects\project4\project4\project4\project4.cpp(23): warning C4101: 'waterVaporDistance' : unreferenced local variable
+     1>c:\users\andrew de leon\documents\csis programming\visual studio 2012\projects\project4\project4\project4\project4.cpp(24): warning C4101: 'methaneDistance' : unreferenced local variable
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Andrew De Leon\Documents\CSIS Programming\Visual Studio 2012\Projects\Project4\Project4\Debug\Project4.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Andrew De Leon\Documents\CSIS Programming\Visual Studio 2012\Projects\Project4\Project4\Debug\Project4.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Andrew De Leon\Documents\CSIS Programming\Visual Studio 2012\Projects\Project4\Project4\Debug\Project4.lib" /MACHINE:X86 Debug\Project4.obj
+         Project4.vcxproj -> C:\Users\Andrew De Leon\Documents\CSIS Programming\Visual Studio 2012\Projects\Project4\Project4\Debug\Project4.exe
+     1>Done Building Project "C:\Users\Andrew De Leon\Documents\CSIS Programming\Visual Studio 2012\Projects\Project4\Project4\Project4\Project4.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.93
