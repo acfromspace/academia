@@ -1,8 +1,11 @@
 # Assignment #2, AC De Leon
+> Introductory C++ program
 
-##### Description: Goal is to familiarize you with C++ while implementing a basic stack machine.
+Goal is to familiarize you with C++ while implementing a basic stack machine.
 
-*6 sub-assignments in total.*
+## Content
+
+6 sub-assignments in total.
 
 1. prog2_1.cpp
 
@@ -24,5 +27,7 @@
 
     Reimplement Program 1 using the Tokenizer class built in part 2 as well as the Stack class in part 4.
     
+## Licensing
 
+The code in this project is licensed under MIT license.
 

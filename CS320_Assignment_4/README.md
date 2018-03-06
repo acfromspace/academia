@@ -1,8 +1,11 @@
 # Assignment #4, AC De Leon
+> Introductory Python Program
 
-#### Description: Goal is to familiarize with Python.
+Goal is to familiarize with Python.
 
-*3 sub-assignments in total.*
+## Content
+
+3 sub-assignments in total.
 
 1. prog4_1.py
 
@@ -26,5 +29,8 @@
 
     Implements the StackMachine.py via command line argument.
     
+## Licensing
+
+The code in this project is licensed under MIT license.
 
 
