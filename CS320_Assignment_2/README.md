@@ -25,8 +25,3 @@ Stack class should only contain "ints" which will implement the constructor, pus
 - prog2_3.cpp
 
 Reimplement Program 1 using the Tokenizer class built in part 2 as well as the Stack class in part 4.
-    
-## [License](LICENSE)
-
-The code in this project is licensed under MIT license.
-

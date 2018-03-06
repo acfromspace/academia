@@ -23,8 +23,3 @@ Implement the Infix to Postfix function within lua using function: "InfixToPostf
 Extension of prog3_1.cpp. Combines both the previous programs printing out the "InfixToPostfix(str)".
 
 Procedurally, lua environment created, run programs by command line argument, take user input, call InfixToPostfix function, retrieve the postfix from the infix (via lua stack), and then print the string.
-    
-## [License](LICENSE)
-
-The code in this project is licensed under MIT license.
-

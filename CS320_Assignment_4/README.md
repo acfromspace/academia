@@ -29,9 +29,3 @@ python prog4_1.py other.txt*
 - prog4_2.py
 
 Implements the StackMachine.py via command line argument.
-    
-## [License](LICENSE)
-
-The code in this project is licensed under MIT license.
-
-

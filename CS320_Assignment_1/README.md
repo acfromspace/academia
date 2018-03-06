@@ -29,9 +29,3 @@ Take at most 65 characters from STDIN. Collect the user input string. Tokenize t
 - prog1_6.c:
 
 Take a single command line. If there is more or less than a single command line, print an error. Command line argument is integer N, else print an error. Program shall perform just as "prog1_5.c".
-
-## [License](LICENSE)
-
-The code in this project is licensed under MIT license.
-
-
