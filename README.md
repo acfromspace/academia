@@ -1,3 +1,8 @@
 # CS560_Algorithms
-SDSU Spring 2017. Professor William Root.<br/>
+>SDSU Spring 2017. Professor William Root.
+
 Contains all coursework and the variance.
+
+## [License](LICENSE)
+
+The code in this project is licensed under MIT license.
