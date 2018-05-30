@@ -1,4 +1,4 @@
-# CS293_Java_Programming
+# CS293-Java-Programming
 
 Contains all coursework and the variance.
 
