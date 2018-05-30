@@ -1,4 +1,4 @@
-# CS550_Artificial_Intelligence
+# CS550-Artificial-Intelligence
 > SDSU Spring 2018. Professor Marie Roch.
 
 Contains all coursework and the variance.
