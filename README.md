@@ -1,4 +1,4 @@
-# CS310_Data_Structures
+# CS310 Data Structures
 > SDSU Fall 2017. Professor Robert Edwards.
 
 Contains all coursework and the variance.
