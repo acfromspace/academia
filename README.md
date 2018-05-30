@@ -1,4 +1,4 @@
-# CS320_Programming_Languages
+# CS320-Programming-Languages
 > SDSU Spring 2017. Professor Scott Lindeneau.
 
 Contains all coursework and the variance.
