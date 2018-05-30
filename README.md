@@ -1,4 +1,4 @@
-# CS296_Cplusplus_Programming
+# CS296-Cplusplus-Programming
 
 Contains all coursework and the variance.
 
