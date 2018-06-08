@@ -12,44 +12,44 @@ FILE *fp;
 sem_t FLAG;
 pid_t pid;
 
-int main( int argc, const char* argv[] ){
+int main( int argc, const char* argv[] ) {
 
-//Create file, print PID, close
-fp = fopen("STACK.txt","w");
-pid = getpid();
-fprintf(fp, "PID: %d\n", pid);
-fclose(fp);
+  // Create file, print PID, close
+  fp = fopen("STACK.txt","w");
+  pid = getpid();
+  fprintf(fp, "PID: %d\n", pid);
+  fclose(fp);
 
-//create semaphore
-sem_init(&FLAG, 0, 4);
+  // Create semaphore
+  sem_init(&FLAG, 0, 4);
 
-//array for thread ids
-int i[4];
-i[0] = 0;
-i[1] = 1;
-i[2] = 2;
-i[3] = 3;
+  //array for thread ids
+  int i[4];
+  i[0] = 0;
+  i[1] = 1;
+  i[2] = 2;
+  i[3] = 3;
 
-//create threads
-pthread_t thread1;
-pthread_t thread2;
-pthread_t thread3;
-pthread_t thread4;
-pthread_create (&thread1, NULL, (void *) &thread_task, (void*) &i[0]);
-pthread_create (&thread2, NULL, (void *) &thread_task, (void*) &i[1]);
-pthread_create (&thread3, NULL, (void *) &thread_task, (void*) &i[2]);
-pthread_create (&thread4, NULL, (void *) &thread_task, (void*) &i[3]);
+  // Create threads
+  pthread_t thread1;
+  pthread_t thread2;
+  pthread_t thread3;
+  pthread_t thread4;
+  pthread_create (&thread1, NULL, (void *) &thread_task, (void*) &i[0]);
+  pthread_create (&thread2, NULL, (void *) &thread_task, (void*) &i[1]);
+  pthread_create (&thread3, NULL, (void *) &thread_task, (void*) &i[2]);
+  pthread_create (&thread4, NULL, (void *) &thread_task, (void*) &i[3]);
 
-pthread_join(thread1, NULL);
-pthread_join(thread2, NULL);
-pthread_join(thread3, NULL);
-pthread_join(thread4, NULL);
+  pthread_join(thread1, NULL);
+  pthread_join(thread2, NULL);
+  pthread_join(thread3, NULL);
+  pthread_join(thread4, NULL);
 
-sem_destroy(&FLAG);
+  sem_destroy(&FLAG);
 
-printf("Threads finished\n");
+  printf("Threads finished\n");
 
-return 0;
+  return 0;
 }
 
 void thread_task(void * ptr){
@@ -60,27 +60,26 @@ void thread_task(void * ptr){
   int startDelay;
   char *suit = malloc(10);
 
-//set suit and time delay for each thread
-  if(thID==1){
+// Set suit and time delay for each thread
+  if(thID==1) {
     strcpy(suit,"Diamond");
     startDelay = 125000;
   }
-  else if(thID==2){
+  else if(thID==2) {
     strcpy(suit,"Club");
     startDelay = 250000;
   }
-  else if(thID==3){
+  else if(thID==3) {
     strcpy(suit,"Heart");
     startDelay = 500000;
   }
-  else{
+  else {
     strcpy(suit,"Spade");
     startDelay = 750000;
   }
 
   int i;
-  for(i = 1;i <= 13;i++){
-
+  for(i = 1;i <= 13;i++) {
       usleep(startDelay);
       sem_wait(&FLAG);
       fp = fopen("STACK.txt","a");
@@ -96,11 +95,15 @@ void thread_task(void * ptr){
           break;
         default:fprintf(fp, "%s %d\n",suit,i);
           break;
+    }
 
-      }
 	  fprintf(stdout, "Thread %d is running\n", thID);
 	  fclose(fp);
 	  sem_post(&FLAG);
+
   }
-   free(suit);
+
+    // Frees unused whitespaces to prevent memory leaks
+    free(suit);
+
 }
