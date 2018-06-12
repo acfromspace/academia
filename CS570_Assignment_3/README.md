@@ -26,7 +26,7 @@ To Clean:
 Change directory to "a1", type "make clean" 
 
 To Operate:
-Change directory to "a1", type "player" 
+Change directory to "a1", type "player.exe" 
 
 Design decisions:
 We designed according to the homework. We each took turns trying to create the a1.c file, but we decided to split up the work via functions and files instead.
