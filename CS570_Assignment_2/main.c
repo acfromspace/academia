@@ -17,7 +17,7 @@ int main(int argc, const char *argv[])
   {
     int option;
 
-    printf("\n\nCS 570 Summer 2018 Assignment #2 running...\n\n");
+    printf("=============== CS 570 Summer 2018 Assignment #2 ===============\n\n");
     printf("1. Create new directory files\n");
     printf("2. Create new regular files\n");
     printf("3. Read from a file (print out to stdout)\n");

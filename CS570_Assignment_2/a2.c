@@ -28,12 +28,12 @@ void createDirectory(void)
 
   if (status == -1)
   {
-    printf("This directory path already exists or is incorrect. Please try again\n");
+    printf("\nThis directory path already exists or is incorrect. Please try again\n\n");
     createDirectory();
   }
   else
   {
-    printf("\nDirectory %s was created!", new_directory);
+    printf("\nDirectory '%s' was created!\n\n", new_directory);
   }
 }
 
@@ -50,26 +50,24 @@ void createRegularFile(void) //#2
   exitValidation(new_rfile);
   int exist = stat(new_rfile, &buffer);
 
-  if (exist == 0)
-  {
-    printf("This file path already exists. Please try again\n");
-    createRegularFile();
-  }
-  else
-  {
-    status = creat(new_rfile, 0777);
-    printf("\nFile %s was created!", new_rfile);
-  }
-
   if (status == -1)
   {
-    printf("This file path is incorrect. Please try again\n");
+    printf("\nThis file path is incorrect. Please try again\n");
     createRegularFile();
   }
   else
   {
-    printf("\nFile %s was created!", new_rfile);
-    memset(new_rfile, 0, sizeof new_rfile);
+    if (exist == 0)
+    {
+      printf("\nThis file path already exists. Please try again.\n\n");
+      createRegularFile();
+    }
+    else
+    {
+      status = creat(new_rfile, 0777);
+      printf("\nFile '%s' was created!\n\n", new_rfile);
+      memset(new_rfile, 0, sizeof new_rfile);
+    }
   }
 }
 
@@ -89,9 +87,11 @@ void readFromFile()
   // If file does not exist, keep repeating till user puts a file that does exist.
   while (fp == NULL)
   {
-    printf("Cannot open file...\n");
+    printf("\nCannot open file...\n\n");
     readFromFile();
   }
+
+  printf("\n========================================================= Beginning of file...\n\n");
 
   c = fgetc(fp);
 
@@ -103,6 +103,8 @@ void readFromFile()
   }
 
   fclose(fp);
+
+  printf("\n\n========================================================= End of file...\n");
 
   shadow(filename);
 
@@ -126,19 +128,17 @@ void writeFiles(void)
   printf("Select an option: ");
   scanf("%d", &option);
 
-  printf("\nYou entered: %d\n\n", option);
-
-  printf("Entering switch statement.\n\n");
+  printf("\nYou entered: %d\n\nNow entering the switch statement.\n\n", option);
 
   switch (option)
   {
   case 1:
 
-    printf("Option #1 chosen!\n");
+    printf("Option #1 chosen!\n\n");
 
-    printf("Name the file path you would like to append: \n");
+    printf("Name the file path you would like to append: ");
     scanf("%s", &filename);
-    printf("Type below what you would like to append: \n\n");
+    printf("\nType below what you would like to append: ");
     scanf("%d", &appending_text);
     fgets(appending_text, 100, stdin);
 
@@ -146,8 +146,8 @@ void writeFiles(void)
     fprintf(out, "%s\n", appending_text);
     fclose(out);
 
-    shadow(filename);
     sortOutput(filename);
+    shadow(filename);
 
     memset(filename, 0, sizeof filename);
     memset(appending_text, 0, sizeof appending_text);
@@ -155,10 +155,10 @@ void writeFiles(void)
     break;
 
   case 2:
-    printf("Option #2 chosen!\n");
-    printf("Name the file you would like to overwrite: \n");
+    printf("Option #2 chosen!\n\n");
+    printf("Name the file you would like to overwrite: ");
     scanf("%s", &filename);
-    printf("Type your new text below: \n\n");
+    printf("\nType your new text below: ");
     scanf("%d", &appending_text);
     fgets(appending_text, 100, stdin);
 
@@ -166,7 +166,7 @@ void writeFiles(void)
 
     if (fp == NULL)
     {
-      printf("Couldn't open file. Try again");
+      printf("\nCouldn't open file. Try again.\n");
       writeFiles();
     }
     else
@@ -175,8 +175,8 @@ void writeFiles(void)
       fclose(fp);
     }
 
-    shadow(filename);
     sortOutput(filename);
+    shadow(filename);
 
     break;
 
@@ -186,15 +186,15 @@ void writeFiles(void)
     * This program currently produces no errors but just make the file in question
     * blank.
     */
-    printf("Option #3 chosen!\n");
+    printf("Option #3 chosen!\n\n");
 
     FILE *fd;
 
-    printf("Name the file you would like to insert bytes into: \n");
+    printf("Name the file you would like to insert bytes into: ");
     scanf("%s", &filename); //select name of file
-    printf("Enter the bit number you'd like to start at: \n\n");
+    printf("\nEnter the bit number you'd like to start at: ");
     scanf("%d", &offset); //enter offset bit # desired
-    printf("Type your new text below: \n\n");
+    printf("\nType your new text below: ");
     scanf("%d", &appending_text); //select text to be added at specified file spot
     fgets(appending_text, 100, stdin);
 
@@ -211,6 +211,10 @@ void writeFiles(void)
 
     fprintf(fd, "%s\n", appending_text);
     fclose(fd);
+
+    sortOutput(filename);
+    shadow(filename);
+
     break;
 
   case 0:
@@ -239,12 +243,12 @@ void printFileStatus()
 
   while (status < 0)
   {
-    printf("Cannot get status of file...\n");
+    printf("\nCannot get status of file...\n");
     printFileStatus();
   }
 
-  printf("\nFile status for %s\n", filename);
-  printf("------------------------------------------\n");
+  printf("\nFile status for %s...\n", filename);
+  printf("\n======================= File information =======================\n\n");
   printf("File size: %d bytes\n", sb.st_size);
 
   printf("Number of hard links: %d\n", sb.st_nlink);
@@ -277,7 +281,7 @@ void printDirectoryListing()
 
   while (dirp == NULL)
   {
-    printf("Cannot open directory...\n");
+    printf("\nCannot open directory...\n\n");
     printDirectoryListing();
   }
 
@@ -285,6 +289,7 @@ void printDirectoryListing()
   {
     printf("%s\n", file->d_name);
   }
+
   closedir(dirp);
 }
 
@@ -319,8 +324,7 @@ void sortOutput(char filename[])
     /* Child process:
     *  When fork() returns 0, we are in the child process.
     */
-    printf("Child process to write sorted output: ");
-    printf("My id is %d \n\n", (int)pid1);
+    printf("Child 'alphabetical' process: ID %d\n", getpid());
 
     // Alphabetical order code
     FILE *fptr1, *fptr2;
@@ -375,8 +379,8 @@ void sortOutput(char filename[])
     /* When fork() returns a positive number, we are in the parent process
     *  (the fork return value is the PID of the newly created child process)
     */
-    printf("Parent process: ");
-    printf("My id is %d \n\n", getpid());
+    printf("\nParent 'alphabetical' process: ID %d\n", getpid());
+
     wait(1); // Waits for child process to complete before progressing
   }
 
@@ -397,8 +401,7 @@ void sortOutput(char filename[])
     /* Child process:
     *  When fork() returns 0, we are in the child process.
     */
-    printf("Child process to write sorted output: ");
-    printf("My id is %d \n\n", (int)pid1);
+    printf("Child 'reverse' process: ID %d\n", getpid());
 
     // Reverse order code
     FILE *fptr1, *fptr2;
@@ -453,8 +456,8 @@ void sortOutput(char filename[])
     /* When fork() returns a positive number, we are in the parent process
     *  (the fork return value is the PID of the newly created child process)
     */
-    printf("Parent process: ");
-    printf("My id is %d \n\n", getpid());
+    printf("\nParent 'reverse' process: ID %d\n", getpid());
+
     wait(1); // Waits for child process to complete before progressing
   }
 }
@@ -496,6 +499,7 @@ void shadow(char filename[])
     /* Child process:
     *  When fork() returns 0, we are in the child process.
     */
+    printf("Child 'shadow' process: ID %d\n\n", getpid());
 
     // Shadow order code
     FILE *fptr1, *fptr2;
@@ -543,6 +547,8 @@ void shadow(char filename[])
     /* When fork() returns a positive number, we are in the parent process
     *  (the fork return value is the PID of the newly created child process)
     */
+    printf("\nParent 'shadow' process: ID %d\n", getpid());
+
     wait(1); // Waits for child process to complete before progressing
   }
 }

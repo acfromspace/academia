@@ -45,4 +45,3 @@ C restrictions on taking user input depending on the data type being recognized 
 Qsort algorithm is very useful with comparing strings to see which order one will be in.
 Child processes being able to exit themselves in order to return to the parent which has relations to the main program.
 File adaptability, being able to manipulate what files do and what they are.
-
