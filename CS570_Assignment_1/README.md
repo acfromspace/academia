@@ -1,8 +1,8 @@
 # README.md
 
 > **Names:** Josh Villanueva, Anthony Savitt, Andrew Christopher De Leon
-**Class usernames:** cssc1074, cssc1067, & cssc1066 (respectively)
-**CS 570 Summer 2018**
+> **Class usernames:** cssc1074, cssc1067, & cssc1066 (respectively)
+> **CS 570 Summer 2018**
 
 ## Assignment #1, Deck of Cards w/ Multiple Threads
 
@@ -20,13 +20,13 @@ README.md
 a1.c uses a main function and a thread_task function. Main creates STACK.txt, the semaphore FLAG, creates 4 threads using pthreads. Thread_task for each thread, grabs the semaphore opens STACK.txt and prints its corresponding suit and card based on the amount of times it has written to the file.
 
 ### To Compile:
-Change directory to "a1", type "make" 
+Change directory to "a1", type "make".
 
 ### To Clean:
-Change directory to "a1", type "make clean" 
+Change directory to "a1", type "make clean".
 
 ### To Operate:
-Change directory to "a1", type "player" 
+Change directory to "a1", type "player".
 
 ### Design decisions:
 We designed according to the homework. We each took turns trying to create the a1.c file, but we decided to split up the work via functions and files instead.

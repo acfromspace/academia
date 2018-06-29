@@ -1,8 +1,8 @@
 # README.md
 
 > **Names:** Josh Villanueva, Anthony Savitt, Andrew Christopher De Leon
-**Class usernames:** cssc1074, cssc1067, & cssc1066 (respectively)
-**CS 570 Summer 2018**
+> **Class usernames:** cssc1074, cssc1067, & cssc1066 (respectively)
+> **CS 570 Summer 2018**
 
 ## Assignment #3, Programmable Event and Timer Control Program
 
@@ -21,19 +21,19 @@ README.md
 A C program that acts as an alarm clock while providing the the time to the user.
 
 ### To Compile:
-Change directory to "a3", type "make" 
+Change directory to "a3", type "make".
 
 ### To Clean:
-Change directory to "a3", type "make clean" 
+Change directory to "a3", type "make clean".
 
 ### To Operate:
-Change directory to "a3", type "tevent TIME_IN_SECONDS"
+Change directory to "a3", type "tevent TIME_IN_SECONDS".
 
 ### Design decisions:
 We designed according to the homework. There was some difficulty with the wording of the assignment versus a non-extraneous way to complete the assignment.
 
 ### Extra features:
-N/A
+N/A.
 
 ### Known bugs:
 While program functions, the user can still interact with the terminal.
