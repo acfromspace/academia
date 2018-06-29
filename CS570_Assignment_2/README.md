@@ -1,8 +1,8 @@
 # README.md
 
-> **Names:** Josh Villanueva, Anthony Savitt, Andrew Christopher De Leon
-> **Class usernames:** cssc1074, cssc1067, & cssc1066 (respectively)
-> **CS 570 Summer 2018**
+**CS 570 Summer 2018**
+**Names:** Josh Villanueva, Anthony Savitt, Andrew Christopher De Leon
+**Class usernames:** cssc1074, cssc1067, & cssc1066 (respectively)
 
 ## Assignment #2, Multi-Processing File Editor
 
