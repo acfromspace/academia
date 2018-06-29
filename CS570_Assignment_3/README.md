@@ -1,38 +1,42 @@
-README.md
+# README.md
 
-Names: Josh Villanueva, Anthony Savitt, Andrew Christopher De Leon
-Class usernames: cssc1074, cssc1067, & cssc1066 (respectively)
+> **Names:** Josh Villanueva, Anthony Savitt, Andrew Christopher De Leon
+**Class usernames:** cssc1074, cssc1067, & cssc1066 (respectively)
+**CS 570 Summer 2018**
 
-CS 570 Summer 2018
+## Assignment #3, Programmable Event and Timer Control Program
 
-Assignment #3, Programmable Event and Timer Control Program
+### Files manifest:
 
-Files manifest (all under cssc1066):
+*5 files in total.*
+```
 a3.c
 a3.h
 main.c
 makefile
 README.md
+```
 
-Description:
-A C Program that lists out a menu in which the user selects an option to demonstrate the file editor's capabilities.
+### Description:
+A C program that acts as an alarm clock while providing the the time to the user.
 
-To Compile:
+### To Compile:
 Change directory to "a3", type "make" 
 
-To Clean:
+### To Clean:
 Change directory to "a3", type "make clean" 
 
-To Operate:
-Change directory to "a3", type "tevent"
+### To Operate:
+Change directory to "a3", type "tevent TIME_IN_SECONDS"
 
-Design decisions:
-We designed according to the homework.
+### Design decisions:
+We designed according to the homework. There was some difficulty with the wording of the assignment versus a non-extraneous way to complete the assignment.
 
-Extra features:
+### Extra features:
 N/A
 
-Known bugs:
-N/A
+### Known bugs:
+While program functions, the user can still interact with the terminal.
 
-Lessons Learned:
+### Lessons Learned:
+Time formatting and how to bounce between functions.

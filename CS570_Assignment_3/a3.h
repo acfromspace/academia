@@ -1,5 +1,4 @@
 // a3.h
-
 // Function prototypes go in here
 
 void wallClock();

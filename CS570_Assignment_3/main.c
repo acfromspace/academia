@@ -1,43 +1,47 @@
 // main.c
+// Driver for the program
 
-#include "a3.h"
-#include <stdio.h>
-#include <time.h>
-#include <unistd.h>
-#include <string.h>
-#include <stdlib.h>
-#include <sys/wait.h>
+#include "a3.h"     /* Function prototypes */
+#include <stdio.h>  /* printf, stderr, fprintf */
+#include <stdlib.h> /* exit */
+#include <string.h> /* strcpy */
+#include <time.h>   /* supposed to be used for formatdate */
+#include <unistd.h> /* _exit, fork */
 
-#define DEFAULT 6
-#define BUF_SIZE 12
-#define PIPE_SIZE 2
+#define defaultTime 25 /* 25 seconds */
+#define b_size 12      /* buffer size */
+#define p_size 2       /* pipe size */
 
-// Global arrays
-int pfd1[PIPE_SIZE];
-int pfd2[PIPE_SIZE];
-char buf[BUF_SIZE];
+// Data structures implemented
+int pipe1[p_size];
+int pipe2[p_size];
+char buffstring[b_size];
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 int main(int argc, const char *argv[])
 {
-  int time = DEFAULT;
+  printf("=============== CS 570 Summer 2018 Assignment #3 ===============\n\n");
+
+  int time = defaultTime;
 
   // Take on arguments sent in the command line
   if (argc == 2)
   {
     // Time is the second argument given from ASCII to integer
-    // How the program goes is "tevent TIME", that means [0] [1], with [1] being time
+    // How the program goes is "tevent TIME", that means [pipe1] [pipe2], with [pipe2] being time
     time = atoi(argv[1]);
   }
 
   // Create pipe 1 with error checking
-  if (pipe(pfd1) == -1)
+  if (pipe(pipe1) == -1)
   {
     printf("Error opening pipe 1!\n");
     exit(1);
   }
 
   // Create pipe 2 with error checking
-  if (pipe(pfd2) == -1)
+  if (pipe(pipe2) == -1)
   {
     printf("Error opening pipe 2!\n");
     exit(1);
@@ -45,7 +49,7 @@ int main(int argc, const char *argv[])
 
   printf("Pipes opened, now creating child processes!\n");
 
-  // Child process 1 Wall_Clock
+  // Child 1 wallClock
   switch (fork())
   {
   case -1:
@@ -54,13 +58,12 @@ int main(int argc, const char *argv[])
 
   case 0:
     wallClock();
-    exit(1);
 
   default:
     break;
   }
 
-  // Child 2 Countdown
+  // Child 2 countdownTimer
   switch (fork())
   {
   case -1:
@@ -69,55 +72,11 @@ int main(int argc, const char *argv[])
 
   case 0:
     countdownTimer(time);
-    exit(1);
 
   default:
     break;
   }
 
-  printf("Parent closing pipes.\n");
-
-  // Pipe close error checking
-  if (close(pfd1[0]) == -1)
-  {
-    printf("Error closing reading end of the pipe 1\n");
-    exit(EXIT_FAILURE);
-  }
-
-  if (close(pfd1[1]) == -1)
-  {
-    printf("Error closing writing end of the pipe 1\n");
-    exit(EXIT_FAILURE);
-  }
-
-  if (close(pfd2[0]) == -1)
-  {
-    printf("Error closing reading end of the pipe 2\n");
-    exit(EXIT_FAILURE);
-  }
-
-  if (close(pfd2[1]) == -1)
-  {
-    printf("Error closing writing end of the pipe 2\n");
-    exit(EXIT_FAILURE);
-  }
-
-  printf("Parent waiting for children completion...\n");
-
-  // Wait until child processes is terminated
-  if (wait(NULL) == -1)
-  {
-    printf("Error wating, no child process is ended!\n");
-    exit(EXIT_FAILURE);
-  }
-  if (wait(NULL) == -1)
-  {
-    printf("Error wating, no child process is ended!\n");
-    exit(EXIT_FAILURE);
-  }
-
-  printf("Friendly message: Parent process finishing...\n");
-
-  printf("Program completed.\n");
-  exit(EXIT_SUCCESS);
+  // Program complete
+  return (0);
 }
