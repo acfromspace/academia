@@ -28,9 +28,9 @@ def driver() :
     size = 8  # Hardcoded size.
     board = TileBoard(size)
 
-    print("================================= TileBoard Game =================================")
+    print("============================== TileBoard Game ==============================")
     print("CS 550 Artificial Intelligence | Prof. Roch | Assignment 2 | Andrew De Leon")
-    print("=========================== Creating solvable board... ===========================")
+    print("======================== Creating solvable board... ========================")
     print("Method checker:")
     print("state_tuple():", board.state_tuple())
     print("get_actions():", board.get_actions())

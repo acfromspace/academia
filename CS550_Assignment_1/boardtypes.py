@@ -3,7 +3,6 @@ from random import shuffle
 
 import math
 
-
 class TileBoard(Board):
 
     def __init__(self, boardSize, force_state=None):

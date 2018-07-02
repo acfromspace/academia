@@ -3,15 +3,14 @@ Created on Feb 8, 2018
 
 @author: mroch
 '''
+
 class Explored(object):
     "Maintain an explored set.  Assumes that states are hashable"
 
     def __init__(self):
         "__init__() - Create an empty explored set"
 
-        self.explored = {}
-
-        raise NotImplemented
+        self.hash_map = dict()
         
     def exists(self, state):
         """exists(state) - Has this state already been explored?
@@ -21,16 +20,15 @@ class Explored(object):
         # if the state is added, it has been explored
         # return true or false accordingly
 
-        raise NotImplemented
+        try:
+            return state in self.hash_map[hash(state)]
+        except KeyError:
+            return False
     
     def add(self, state):
         """add(state) - add given state to the explored set.  
         state must be hashable and we asssume that it is not already in set
         """
-
-        # For whatever state the tileboard is in, add it to the exists pile
-
-        state = self.exists()
 
         # The hash function is a Python builtin that generates
         # a hash value from its argument.  Use this to create
@@ -39,5 +37,6 @@ class Explored(object):
         # Note that when you access a Python dictionary by a
         # non existant key, it throws a KeyError
 
-        raise NotImplemented
-            
+        if hash(state) not in self.hash_map.keys():
+            self.hash_map[hash(state)] = set()
+        self.hash_map[hash(state)].add(state)
