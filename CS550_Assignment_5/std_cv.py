@@ -1,7 +1,15 @@
+# @author       acfromspace
+# @filename     std_cv.py
+# @description  Assignment 5
+# @class        CS 550
+# @instructor   Roch
+# @notes        N/A
+
 
 from statistics import (stdev, mean)
 from ml_lib.learning import (err_ratio, train_and_test)
 import copy
+
 
 def cross_validation(learner, dataset, k=10, trials=1):
     """Perform k-fold cross_validation
@@ -34,6 +42,7 @@ def cross_validation(learner, dataset, k=10, trials=1):
         folds.append(correct/n)
         training_module.examples += dataset.examples
 
-    print("Data samples:", info_samples,"\nData labels:", info_labels,
-          "\nMean:", mean(solution), "\nStandard Deviation:", stdev(solution, mean(solution)),
-          "\nError rates for folds:", folds, "\nLearner Name:", learner.__name__,"\n")
+    print("Data samples:", info_samples, "\nData labels:", info_labels,
+          "\nMean:", mean(solution), "\nStandard Deviation:", stdev(
+              solution, mean(solution)),
+          "\nError rates for folds:", folds, "\nLearner Name:", learner.__name__, "\n")

@@ -1,9 +1,9 @@
-# @author acfromspace
-# @description Assignment 1
-# @class CS 550
-# @instructor Roch
-#
-# driver.py
+# @author       acfromspace
+# @filename     driver.py
+# @description  Assignment 1
+# @class        CS 550
+# @instructor   Roch
+# @notes        N/A
 
 from boardtypes import TileBoard
 
@@ -18,13 +18,13 @@ def driver():
     solved = board.solved()
 
     while not solved:
-        print("===================================== Controls ===================================")
+        print("================================= Controls ===============================")
         print("a = left")
         print("d = right")
         print("w = up")
         print("s = down")
         print('To quit, simply type in "q" or "Q".')
-        print("====================================== Board =====================================")
+        print("================================== Board =================================")
         print(board)
 
         board.get_actions()

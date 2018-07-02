@@ -1,15 +1,18 @@
-'''
-Created on Feb 10, 2018
+# @author       acfromspace
+# @filename     problemsearch.py
+# @description  Assignment 2
+# @class        CS 550
+# @instructor   Roch
+# @notes        N/A
 
-@author: mroch
-'''
+from collections import deque
 
-from basicsearch_lib02.searchrep import (Node, print_nodes)
-from basicsearch_lib02.queues import PriorityQueue 
+from basicsearch_lib02.queues import PriorityQueue
+from basicsearch_lib02.searchrep import (Node, Problem)
 from explored import Explored
-import time
-        
-def graph_search(problem, verbose=False, debug=False):
+
+
+def graph_search(problem: Problem, verbose=False, debug=False):
     """graph_search(problem, verbose, debug) - Given a problem representation
     (instance of basicsearch_lib02.representation.Problem or derived class),
     attempt to solve the problem.
@@ -70,7 +73,75 @@ def graph_search(problem, verbose=False, debug=False):
     path - list of actions to solve the problem or None if no solution was found
     nodes_explored - Number of nodes explored (dequeued from frontier)
     """
+    
+    # Establish frontier set and nodes
+    frontier = PriorityQueue()
+    frontier.append(Node(problem, problem.initial))
+    node = frontier.pop()
+    popping = True
 
-    # Not sure how to implement
+    if node.expand(node.problem)[0].g < 0:
+        # Depth First Search
+        frontier = deque()
+        frontier.append(Node(problem, problem.initial))
+    elif node.expand(node.problem)[0].h < 2:
+        # Breadth First Search
+        popping = False
+        frontier = deque()
+        frontier.append(Node(problem, problem.initial))
+    else:
+        # Manhattan Search
+        frontier.append(node)
 
-    raise NotImplemented
+    # Working with the hash
+    frontier_hash = Explored()
+    frontier_hash.add(problem.initial.state_tuple())
+    finished = False
+    nodes_explored = 0
+    explored = Explored()
+    while not finished:
+        if popping:
+            node = frontier.pop()  # Manhattan and DFS
+        else:
+            node = frontier.popleft()  # BFS
+
+        if debug:
+            print("Node popped:", str(node))
+
+        explored.add(node.state.state_tuple())
+        nodes_explored += 1
+
+        if node.state.solved():
+            if debug:
+                print("Solution found!")
+            solution_path = node.path()
+            finished = True
+            if verbose:
+                print_solution(solution_path)
+            return solution_path, nodes_explored
+        else:
+            for child in node.expand(node.problem):
+                if not explored.exists(child.state.state_tuple()) and not frontier_hash.exists(
+                        child.state.state_tuple()):
+                    frontier.append(child)
+                    frontier_hash.add(child)
+                elif debug:
+                    print("Skipping...", child)
+                    pass
+            finished = len(frontier) == 0
+        if debug:
+            print("")
+    if verbose:
+        print("No solution found")
+    return None, nodes_explored
+
+
+def print_solution(path: tuple):
+    print("Amount of moves taken: %d" % (len(path) - 1))
+    print("Initial State...")
+    print(path[0])
+
+    for i in range(1, len(path)):
+        print("Move %d - %s" % (i, path[i].action))
+        print(path[i].state)
+        print("")

@@ -1,3 +1,10 @@
+# @author       acfromspace
+# @filename     ai.py
+# @description  Assignment 3
+# @class        CS 550
+# @instructor   Roch
+# @notes        N/A
+
 """
 ai - search & strategy module
 
@@ -14,7 +21,8 @@ class Strategy(abstractstrategy.Strategy):
 
     def __init__(self, maxplayer, game, maxplies):
         super(Strategy, self).__init__(maxplayer, game, maxplies)
-        self.find = AlphaBetaSearch(self, maxplayer, self.minplayer, maxplies=maxplies, verbose=False)
+        self.find = AlphaBetaSearch(
+            self, maxplayer, self.minplayer, maxplies=maxplies, verbose=False)
 
     def utility(self, board):
         # Returns best value
@@ -27,9 +35,9 @@ class Strategy(abstractstrategy.Strategy):
     def check_pieces(self, board):
         # Checks available pieces
         pawn_value = board.get_pawnsN()[board.playeridx(self.maxplayer)] - \
-                     board.get_pawnsN()[board.playeridx(self.minplayer)]
+            board.get_pawnsN()[board.playeridx(self.minplayer)]
         king_value = board.get_kingsN()[board.playeridx(self.maxplayer)] - \
-                     board.get_kingsN()[board.playeridx(self.minplayer)]
+            board.get_kingsN()[board.playeridx(self.minplayer)]
         return pawn_value + (1.5 * king_value)
 
     def check_dist(self, board):
@@ -53,7 +61,8 @@ class Strategy(abstractstrategy.Strategy):
     def check_jump(self, board):
         # Finds number of jumps by difference of total of previous board and current board
         if self.start_count:
-            self.rev_piececounter = self.curr_piececounter = self.amount_pieces(board)
+            self.rev_piececounter = self.curr_piececounter = self.amount_pieces(
+                board)
             self.start_count = False
         self.prev_piececounter = self.curr_piececounter
         self.curr_piececounter = self.amount_pieces(board)
@@ -65,7 +74,7 @@ class Strategy(abstractstrategy.Strategy):
         else:
             # Maxplayer pieces lost
             return self.prev_piececounter[1] - self.curr_piececounter[1] - \
-                   self.prev_piececounter[0] - self.curr_piececounter[0]
+                self.prev_piececounter[0] - self.curr_piececounter[0]
 
     def amount_pieces(self, board):
         # Total number of pawns/kings on board
@@ -115,7 +124,8 @@ class AlphaBetaSearch(object):
 
     def alphabeta(self, state):
         # Implementation of alpha-beta
-        best_value = self.max_value(state=state, alpha=(-self.inf), beta=self.inf)
+        best_value = self.max_value(
+            state=state, alpha=(-self.inf), beta=self.inf)
         # Compares all possible actions and chooses the best one.
         actions = state.get_actions(self.maxplayer)
         for action in actions:
@@ -139,7 +149,8 @@ class AlphaBetaSearch(object):
             self.strategy.depth += 2
             for action in state.get_actions(self.maxplayer):
                 # Compare which has the higher value
-                value = max(value, self.min_value(state=state.move(action), alpha=alpha, beta=beta))
+                value = max(value, self.min_value(
+                    state=state.move(action), alpha=alpha, beta=beta))
                 # Store the utility value of the state since value will constantly grab infinity after first run
                 util_value = self.strategy.utility(state.move(action))
                 if util_value >= beta:
@@ -162,7 +173,8 @@ class AlphaBetaSearch(object):
                 if self.strategy.depth > self.maxplies:
                     return value
                 # Compare which has the lower value
-                value = min(value, self.max_value(state=state.move(action), alpha=alpha, beta=beta))
+                value = min(value, self.max_value(
+                    state=state.move(action), alpha=alpha, beta=beta))
                 # Store the utility value of the state since value will constantly grab -infinity after first run
                 util_value = self.strategy.utility(state.move(action))
                 if util_value <= alpha:

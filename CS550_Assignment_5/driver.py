@@ -1,8 +1,9 @@
-'''
-Created on Apr 15, 2018
-
-@author: mroch
-'''
+# @author       acfromspace
+# @filename     driver.py
+# @description  Assignment 5
+# @class        CS 550
+# @instructor   Roch
+# @notes        N/A
 
 from ml_lib.learning import (DataSet,
                              DecisionTreeLearner, NeuralNetLearner)

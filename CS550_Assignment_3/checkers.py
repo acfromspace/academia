@@ -1,8 +1,9 @@
-'''
-Created on Feb 22, 2015
-
-@author: mroch
-'''
+# @author       acfromspace
+# @filename     checkers.py
+# @description  Assignment 3
+# @class        CS 550
+# @instructor   Roch
+# @notes        N/A
 
 import imp
 import sys
@@ -28,7 +29,7 @@ import checkerboard
 # ai - ai player
 import ai
 
-# human - human player, prompts for input    
+# human - human player, prompts for input
 import human
 
 
@@ -86,7 +87,8 @@ def Game(red=ai.Strategy, black=tonto.Strategy,
 
         current = time.time()
 
-        print("Turn time: {} | Game time: {}".format(elapsed(turn_start, current), elapsed(game_start, current)))
+        print("Turn time: {} | Game time: {}".format(
+            elapsed(turn_start, current), elapsed(game_start, current)))
 
         turn_start = time.time()
 
@@ -97,7 +99,8 @@ def Game(red=ai.Strategy, black=tonto.Strategy,
 
         current = time.time()
 
-        print("Turn time: {} | Game time: {}".format(elapsed(turn_start, current), elapsed(game_start, current)))
+        print("Turn time: {} | Game time: {}".format(
+            elapsed(turn_start, current), elapsed(game_start, current)))
 
         if game_board.is_terminal()[0]:
             print("Game finished!\n")

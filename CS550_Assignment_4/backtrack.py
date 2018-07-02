@@ -1,11 +1,14 @@
+# @author       acfromspace
+# @filename     backtrack.py
+# @description  Assignment 4
+# @class        CS 550
+# @instructor   Roch
+# @notes        N/A
+
 from csp_lib.backtrack_util import (first_unassigned_variable,
                                     unordered_domain_values,
                                     no_inference)
 
-"""
-Author: Andrew De Leon
-Description: CS 550, Assignment #4
-"""
 
 def backtracking_search(csp,
                         select_unassigned_variable=first_unassigned_variable,

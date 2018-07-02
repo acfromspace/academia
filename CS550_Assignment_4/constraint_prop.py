@@ -1,11 +1,10 @@
-'''
-Constraint propagation
-'''
+# @author       acfromspace
+# @filename     constraint_prop.py
+# @description  Assignment 4
+# @class        CS 550
+# @instructor   Roch
+# @notes        N/A
 
-"""
-Author: Andrew De Leon
-Description: CS 550, Assignment #4
-"""
 
 def AC3(csp, queue=None, removals=None):
     """AC3 constraint propagation
@@ -17,9 +16,9 @@ def AC3(csp, queue=None, removals=None):
     #    csp.variables is a list of variables
     #    cps.neighbors[x] is the neighbors of variable x
 
-
     if queue is None:
-        queue = [(first, third) for first in csp.variables for third in csp.neighbors[first]]
+        queue = [(first, third)
+                 for first in csp.variables for third in csp.neighbors[first]]
 
     # Copies the current set of domains to one called curr_domains which will be the affected data structure
     csp.support_pruning()

@@ -1,3 +1,10 @@
+# @author       acfromspace
+# @filename     driver.py
+# @description  Assignment 4
+# @class        CS 550
+# @instructor   Roch
+# @notes        N/A
+
 from csp_lib.sudoku import (Sudoku, easy1, harder1)
 from constraint_prop import AC3
 from csp_lib.backtrack_util import mrv
@@ -12,6 +19,7 @@ Description: CS 550, Assignment #4
 """
 
 # Implemented time management code from Assignment #3
+
 
 def elapsed(earlier, later):
     """elapsed - Convert elapsed time.time objects to duration string
@@ -70,7 +78,8 @@ def game():
         current = time.time()
 
         # Time information to be relayed
-        print("\nPuzzle time: {} | Overall time: {}".format(elapsed(puzzle_start, current), elapsed(game_start, current)))
+        print("\nPuzzle time: {} | Overall time: {}".format(
+            elapsed(puzzle_start, current), elapsed(game_start, current)))
 
 
 if __name__ == "__main__":
