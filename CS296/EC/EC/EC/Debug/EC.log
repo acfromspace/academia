@@ -1,0 +1,60 @@
+﻿Build started 5/28/2014 7:15:06 AM.
+     1>Project "C:\Users\Andrew De Leon\Documents\CSIS Programming\Visual Studio 2012\Projects\EC\EC\EC\EC.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt Calculator.cpp
+         Calculator.cpp
+     1>c:\users\andrew de leon\documents\csis programming\visual studio 2012\projects\ec\ec\ec\calculator.cpp(37): error C2143: syntax error : missing ',' before ';'
+     1>c:\users\andrew de leon\documents\csis programming\visual studio 2012\projects\ec\ec\ec\calculator.cpp(41): error C2143: syntax error : missing ';' before '{'
+     1>c:\users\andrew de leon\documents\csis programming\visual studio 2012\projects\ec\ec\ec\calculator.cpp(43): error C2143: syntax error : missing ',' before ')'
+     1>c:\users\andrew de leon\documents\csis programming\visual studio 2012\projects\ec\ec\ec\calculator.cpp(46): error C2143: syntax error : missing ',' before ')'
+     1>c:\users\andrew de leon\documents\csis programming\visual studio 2012\projects\ec\ec\ec\calculator.cpp(55): error C2143: syntax error : missing ';' before '}'
+     1>c:\users\andrew de leon\documents\csis programming\visual studio 2012\projects\ec\ec\ec\calculator.cpp(60): error C2143: syntax error : missing ',' before ')'
+     1>c:\users\andrew de leon\documents\csis programming\visual studio 2012\projects\ec\ec\ec\calculator.cpp(67): error C2143: syntax error : missing ';' before '}'
+     1>c:\users\andrew de leon\documents\csis programming\visual studio 2012\projects\ec\ec\ec\calculator.cpp(71): error C2143: syntax error : missing ';' before '{'
+     1>c:\users\andrew de leon\documents\csis programming\visual studio 2012\projects\ec\ec\ec\calculator.cpp(76): error C2065: 'Num' : undeclared identifier
+     1>c:\users\andrew de leon\documents\csis programming\visual studio 2012\projects\ec\ec\ec\calculator.cpp(76): error C2228: left of '.end' must have class/struct/union
+                 type is ''unknown-type''
+     1>c:\users\andrew de leon\documents\csis programming\visual studio 2012\projects\ec\ec\ec\calculator.cpp(76): error C2143: syntax error : missing ',' before ')'
+     1>c:\users\andrew de leon\documents\csis programming\visual studio 2012\projects\ec\ec\ec\calculator.cpp(77): error C2143: syntax error : missing ';' before '{'
+     1>c:\users\andrew de leon\documents\csis programming\visual studio 2012\projects\ec\ec\ec\calculator.cpp(80): error C2143: syntax error : missing ';' before '}'
+     1>c:\users\andrew de leon\documents\csis programming\visual studio 2012\projects\ec\ec\ec\calculator.cpp(83): error C2143: syntax error : missing ';' before '}'
+     1>c:\users\andrew de leon\documents\csis programming\visual studio 2012\projects\ec\ec\ec\calculator.cpp(86): error C2065: 'ShortNum' : undeclared identifier
+     1>c:\users\andrew de leon\documents\csis programming\visual studio 2012\projects\ec\ec\ec\calculator.cpp(86): error C2275: 'std::string' : illegal use of this type as an expression
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\xstring(2300) : see declaration of 'std::string'
+     1>c:\users\andrew de leon\documents\csis programming\visual studio 2012\projects\ec\ec\ec\calculator.cpp(86): error C2143: syntax error : missing ',' before ')'
+     1>c:\users\andrew de leon\documents\csis programming\visual studio 2012\projects\ec\ec\ec\calculator.cpp(87): error C2143: syntax error : missing ';' before '{'
+     1>c:\users\andrew de leon\documents\csis programming\visual studio 2012\projects\ec\ec\ec\calculator.cpp(91): error C2065: 'LongNum' : undeclared identifier
+     1>c:\users\andrew de leon\documents\csis programming\visual studio 2012\projects\ec\ec\ec\calculator.cpp(91): error C2228: left of '.length' must have class/struct/union
+                 type is ''unknown-type''
+     1>c:\users\andrew de leon\documents\csis programming\visual studio 2012\projects\ec\ec\ec\calculator.cpp(91): error C2065: 'ShortNum' : undeclared identifier
+     1>c:\users\andrew de leon\documents\csis programming\visual studio 2012\projects\ec\ec\ec\calculator.cpp(91): error C2143: syntax error : missing ',' before ')'
+     1>c:\users\andrew de leon\documents\csis programming\visual studio 2012\projects\ec\ec\ec\calculator.cpp(94): error C2143: syntax error : missing ';' before '}'
+     1>c:\users\andrew de leon\documents\csis programming\visual studio 2012\projects\ec\ec\ec\calculator.cpp(97): error C2143: syntax error : missing ';' before '{'
+     1>c:\users\andrew de leon\documents\csis programming\visual studio 2012\projects\ec\ec\ec\calculator.cpp(102): error C2143: syntax error : missing ';' before '}'
+     1>c:\users\andrew de leon\documents\csis programming\visual studio 2012\projects\ec\ec\ec\calculator.cpp(104): error C2275: 'std::string' : illegal use of this type as an expression
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\xstring(2300) : see declaration of 'std::string'
+     1>c:\users\andrew de leon\documents\csis programming\visual studio 2012\projects\ec\ec\ec\calculator.cpp(104): error C2146: syntax error : missing ',' before identifier 'carry'
+     1>c:\users\andrew de leon\documents\csis programming\visual studio 2012\projects\ec\ec\ec\calculator.cpp(104): error C2143: syntax error : missing ',' before ')'
+     1>c:\users\andrew de leon\documents\csis programming\visual studio 2012\projects\ec\ec\ec\calculator.cpp(105): error C2143: syntax error : missing ';' before '{'
+     1>c:\users\andrew de leon\documents\csis programming\visual studio 2012\projects\ec\ec\ec\calculator.cpp(108): error C2143: syntax error : missing ';' before '{'
+     1>c:\users\andrew de leon\documents\csis programming\visual studio 2012\projects\ec\ec\ec\calculator.cpp(110): error C2143: syntax error : missing ',' before ')'
+     1>c:\users\andrew de leon\documents\csis programming\visual studio 2012\projects\ec\ec\ec\calculator.cpp(112): error C2143: syntax error : missing ';' before '}'
+     1>c:\users\andrew de leon\documents\csis programming\visual studio 2012\projects\ec\ec\ec\calculator.cpp(114): error C2143: syntax error : missing ',' before ')'
+     1>c:\users\andrew de leon\documents\csis programming\visual studio 2012\projects\ec\ec\ec\calculator.cpp(115): error C2143: syntax error : missing ';' before '}'
+     1>c:\users\andrew de leon\documents\csis programming\visual studio 2012\projects\ec\ec\ec\calculator.cpp(117): error C2275: 'std::string' : illegal use of this type as an expression
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\xstring(2300) : see declaration of 'std::string'
+     1>c:\users\andrew de leon\documents\csis programming\visual studio 2012\projects\ec\ec\ec\calculator.cpp(117): error C2146: syntax error : missing ',' before identifier 'carry'
+     1>c:\users\andrew de leon\documents\csis programming\visual studio 2012\projects\ec\ec\ec\calculator.cpp(117): error C2143: syntax error : missing ',' before ')'
+     1>c:\users\andrew de leon\documents\csis programming\visual studio 2012\projects\ec\ec\ec\calculator.cpp(118): error C2143: syntax error : missing ';' before '{'
+     1>c:\users\andrew de leon\documents\csis programming\visual studio 2012\projects\ec\ec\ec\calculator.cpp(121): error C2143: syntax error : missing ';' before '{'
+     1>c:\users\andrew de leon\documents\csis programming\visual studio 2012\projects\ec\ec\ec\calculator.cpp(123): error C2143: syntax error : missing ',' before ')'
+     1>c:\users\andrew de leon\documents\csis programming\visual studio 2012\projects\ec\ec\ec\calculator.cpp(125): error C2143: syntax error : missing ';' before '}'
+     1>c:\users\andrew de leon\documents\csis programming\visual studio 2012\projects\ec\ec\ec\calculator.cpp(127): error C2143: syntax error : missing ',' before ')'
+     1>c:\users\andrew de leon\documents\csis programming\visual studio 2012\projects\ec\ec\ec\calculator.cpp(128): error C2143: syntax error : missing ';' before '}'
+     1>c:\users\andrew de leon\documents\csis programming\visual studio 2012\projects\ec\ec\ec\calculator.cpp(129): error C2143: syntax error : missing ';' before '}'
+     1>c:\users\andrew de leon\documents\csis programming\visual studio 2012\projects\ec\ec\ec\calculator.cpp(129): fatal error C1004: unexpected end-of-file found
+     1>Done Building Project "C:\Users\Andrew De Leon\Documents\CSIS Programming\Visual Studio 2012\Projects\EC\EC\EC\EC.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:00.55

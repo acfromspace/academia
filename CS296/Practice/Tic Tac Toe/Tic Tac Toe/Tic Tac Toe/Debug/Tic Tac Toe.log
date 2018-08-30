@@ -1,0 +1,5 @@
+﻿  Tic Tac Toe.cpp
+c:\users\evadeleon\desktop\projects\practice\tic tac toe\tic tac toe\tic tac toe\tic tac toe.cpp(139): warning C4715: 'checkwinP2': not all control paths return a value
+c:\users\evadeleon\desktop\projects\practice\tic tac toe\tic tac toe\tic tac toe\tic tac toe.cpp(127): warning C4715: 'checkwinP1': not all control paths return a value
+  Tic Tac Toe.vcxproj -> C:\Users\EVADELEON\Desktop\Projects\Practice\Tic Tac Toe\Tic Tac Toe\Debug\Tic Tac Toe.exe
+  Tic Tac Toe.vcxproj -> C:\Users\EVADELEON\Desktop\Projects\Practice\Tic Tac Toe\Tic Tac Toe\Debug\Tic Tac Toe.pdb (Full PDB)
