@@ -31,7 +31,7 @@
 
 <!-- ![NAME_OF_GIF](URL_OF_GIF) -->
 
-<a href="https://github.com/acfromspace/academia" target="_blank"><i>academia</i></a> is a repository with the following features:
+[*academia*](https://github.com/acfromspace/academia) is a repository with the following features:
 
 - **Ease of access.** All the repositories were separated by each their own, but to help the future generations, I provide the files in one simple repo.
 - **Completed files.** Respectively the files should be working as last they were touched when turning in. If there is unfinished code this means the assignment was either moved as extra credit or the assignment was not being graded anymore.
