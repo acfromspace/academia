@@ -18,7 +18,6 @@
 <!-- INFORMATION (Shields:IO) -->
 
 <p align="center">
-    <!-- HEY DON'T FORGET TO FIX THE URLS -->
     <a href="https://github.com/acfromspace/academia/blob/master/LICENSE">
         <img src="https://img.shields.io/github/license/mashape/apistatus.svg"
             alt="License: MIT"></a>
@@ -27,8 +26,6 @@
 </p>
 
 <!-- FEATURES -->
-
-<!-- ![NAME_OF_GIF](URL_OF_GIF) -->
 
 [*academia*](https://github.com/acfromspace/academia) is a repository with the following features:
 
