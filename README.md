@@ -15,7 +15,7 @@
   Courses taken at Grossmont College and San Diego State University.
 </p>
 
-<!-- INFORMATION (Shields:IO) -->
+<!-- BADGES -->
 
 <p align="center">
     <a href="https://github.com/acfromspace/academia/blob/master/LICENSE">
