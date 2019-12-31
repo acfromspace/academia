@@ -2,7 +2,7 @@
 SDSU Spring 2017. Professor William Root.<br/>
 Authors:<br/>
 
-    AC De Leon, Kevin Mendoza, Derrick Mercado, & Jonathon Malo.
+    kingofthenorth, Kevin Mendoza, Derrick Mercado, & Jonathon Malo.
 
 Description:<br/>
 
