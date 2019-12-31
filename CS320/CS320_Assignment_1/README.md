@@ -1,4 +1,4 @@
-# Assignment #1, AC De Leon
+# Assignment #1, kingofthenorth
 > Introductory C program
 
 Goal of the assignment is to familiarize one with the C programming language as well as organizing git repositories correctly.

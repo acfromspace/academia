@@ -8,8 +8,8 @@ import java.util.Iterator;
  * by the HashI interface. The Hash consists of an array of Linked Lists,
  * the Linked Lists are defined by the HashListI interface.
  * 
- * @author Andrew De Leon
- * @authorid 819470542
+ * @author kingofthenorth
+ * @authorid 123456789
  *
  * @param <K> The key for entries in the hash
  * @param <V> The value for entries in the hash

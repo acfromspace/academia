@@ -1,4 +1,4 @@
-# @author       acfromspace
+# @author       kingofthenorth
 # @filename     driver.py
 # @description  Assignment 5
 # @class        CS 550
@@ -36,7 +36,7 @@ def learn(dataset):
 
 def main():
     print("============================= Machine Learning ============================")
-    print("CS 550 Artificial Intelligence | Prof. Roch | Assignment 5 | Andrew De Leon")
+    print("CS 550 Artificial Intelligence | Prof. Roch | Assignment 5 | kingofthenorth")
     print("============================= Creating game... ============================")
     demo_start = time.time() # timer for results
     learn('iris')

@@ -1,10 +1,11 @@
+// Fig. 2.7: Addition.
+
 package lab1part3;
 
-// Fig. 2.7: Addition.java
 import java.util.Scanner;
 
-public class Figure27CSIS293 {
-
+public class Figure27CSIS293
+{
 	private static Scanner input;
 
 	public static void main(String[] args)

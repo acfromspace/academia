@@ -6,7 +6,7 @@ int main(void) {
     char * ptr;
 
     // Header
-    printf("Assignment #0-1, Andrew Christopher De Leon, andrewchristopherdeleon@gmail.com\n\n");
+    printf("Assignment #0-1, kingofthenorth, kingofthenorth@gmail.com\n\n");
 
     // Program (Using fgets method)
     printf("What is your name?\n");

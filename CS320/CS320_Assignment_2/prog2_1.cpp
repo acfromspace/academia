@@ -24,7 +24,7 @@ int main(int argc,char **argv)
     int counter = 0;
 	int running = 1;
 
-	printf("Assignment #2-1, Andrew De Leon, andrewchristopherdeleon@gmail.com\n");
+	printf("Assignment #2-1, kingofthenorth, kingofthenorth@gmail.com\n");
 
 	while (running == 1) {
 		printf("> ");

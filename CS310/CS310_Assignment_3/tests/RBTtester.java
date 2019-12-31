@@ -99,7 +99,7 @@ public class RBTtester {
 				error = true;
 			}
 
-			 //Check the contains method in the Tree.
+			 // Check the contains method in the Tree.
 			for (IPAddress ip: list)	{
 				if (!RBTree.contains(ip))	{
 					System.err.println("All the items in the LinkedList should be on the Tree but they are not.");

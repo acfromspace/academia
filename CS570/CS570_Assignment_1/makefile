@@ -1,6 +1,6 @@
 # HOW TO USE
-# In your terminal, change directory to a1 (if you do not have one, make one w/ mkdir a1)
-# Check to see if you have a1.c, a1.h within the folder before you proceed
+# In your terminal, change directory to a1 (if you do not have one, make one w/ mkdir a1).
+# Check to see if you have a1.c, a1.h within the folder before you proceed.
 #
 # TERMINAL COMMANDS
 # make -> creates the executable (player.exe)

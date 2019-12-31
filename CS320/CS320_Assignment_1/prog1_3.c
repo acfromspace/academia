@@ -5,7 +5,7 @@
 
 int main(void) {
     // Header
-    printf("Assignment #1-3, Andrew Christopher De Leon, andrewchristopherdeleon@gmail.com\n");
+    printf("Assignment #1-3, kingofthenorth, kingofthenorth@gmail.com\n");
 
     char string[MAX];
     char *p;

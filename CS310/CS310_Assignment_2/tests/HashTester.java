@@ -59,7 +59,7 @@ public class HashTester {
 			}
 			System.out.println();
 			
-			//Change one value on the hash
+			// Change one value on the hash
 			llist.changeValue(new URL("edwards.sdsu.edu"), new IPAddress("192.168.1.2"));
 			if (!llist.getValue(new URL("edwards.sdsu.edu")).equals(new IPAddress("192.168.1.2")))	{
 				System.err.println("All right, all right. Don't panick. Check your getValue/changeValue methods or your equals() in your IPAdress.");

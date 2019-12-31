@@ -1,30 +1,24 @@
 package lab4part1;
 
-//Author: Andrew Christopher De Leon
-
 import java.text.DecimalFormat;
 import java.util.Scanner;
 
 public class Figure622CSIS293 
 {
-	
 	private static Scanner input;
 
 	public static void main(String[] args) 
 	{
 		input = new Scanner(System.in);
-		
-		//Declarations
+
 		int decision;
 		double inputF;
 		double inputC;
 		double outputF;
 		double outputC;
 		
-		//Decimal places
 		DecimalFormat df = new DecimalFormat(".#");
 		
-		//Input prompt
 		System.out.println
 		(
 			"Temperature Conversion Program\n\n" +
@@ -33,9 +27,9 @@ public class Figure622CSIS293
 			"3. Quit.\n\n" +
 			"Please choose an option (1-3)."
 		);
+
 		decision = input.nextInt();
 		
-		//Options
 		if (decision == 1)
 		{
 			System.out.println("Please put in temperature of Farenheit: ");
@@ -56,7 +50,5 @@ public class Figure622CSIS293
 					System.out.print("Have a good day!");
 				else
 					System.out.println("ERROR: INVALID INPUT, PLEASE RESTART PROGRAM.");
-
 	}
-
 }

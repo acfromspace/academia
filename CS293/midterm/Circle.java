@@ -1,35 +1,32 @@
 package midterm2014;
 
-//Author: Andrew Christopher De Leon
-//Date: 28 March 2014
-//Project: Midterm
-//Description: Circle
+// Date: 28 March 2014
+// Project: Midterm
+// Description: Circle.
 
 public class Circle 
 {
-	// Declare instance variables
+	// Declare instance variables.
 	private double radius;
 	private double area;
 	
-	// Two constructors that calculate the area of the circle
+	// Two constructors that calculate the area of the circle.
 	
-	// Default constructor
+	// Default constructor.
 	public Circle()
 	{
 		radius = 5;
 		area = (5*5*Math.PI);
 	}
 	
-	// Input constructor
+	// Input constructor.
 	public Circle(double newRadius)
 	{
 		radius = newRadius;
 		area = (newRadius*newRadius*Math.PI);
 	}
 	
-	// Set/Get methods
-	
-	// Set method
+	// Set methods.
 	public void setRadiusNumber (double radiusNumber)
 	{
 		radius = radiusNumber;
@@ -40,7 +37,7 @@ public class Circle
 		area = (radius*radius*Math.PI);
 	}
 	
-	// Get method
+	// Get methods.
 	public double getRadius() 
 	{
 		return radius;
@@ -50,10 +47,9 @@ public class Circle
 		return area;
 	}
 
-	// Print the radius and area values
+	// Print the radius and area values.
 	public void displayMessage()
 	{
 		System.out.printf("The radius inputted is %.2f\nThe area of the ricle is %.2f\n\n", radius, area);
 	}
-	
 }

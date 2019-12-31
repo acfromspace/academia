@@ -1,6 +1,6 @@
 import sys
 
-print("Assignment #4-1, Andrew Christopher De Leon, andrewchristopherdeleon@gmail.com")
+print("Assignment #4-1, kingofthenorth, kingofthenorth@gmail.com")
 
 fileName = open(sys.argv[1])
 for line in fileName.readlines():

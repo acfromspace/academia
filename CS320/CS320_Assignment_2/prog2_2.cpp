@@ -19,7 +19,7 @@ int main(int argc,char **argv)
     int counter = 0;
 	int running = 1;
 
-	printf("Assignment #2-2, Andrew De Leon, andrewchristopherdeleon@gmail.com\n");
+	printf("Assignment #2-2, kingofthenorth, kingofthenorth@gmail.com\n");
 
 	while (running == 1) {
 		printf("> ");

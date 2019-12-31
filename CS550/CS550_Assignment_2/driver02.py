@@ -1,4 +1,4 @@
-# @author       acfromspace
+# @author       kingofthenorth
 # @filename     driver02.py
 # @description  Assignment 2
 # @class        CS 550
@@ -37,7 +37,7 @@ def tock(t):
 
 def driver():
     print("============================= TileBoard Game ==============================")
-    print("CS 550 Artificial Intelligence | Prof. Roch | Assignment 2 | Andrew De Leon")
+    print("CS 550 Artificial Intelligence | Prof. Roch | Assignment 2 | kingofthenorth")
     print("======================== Going through searches... ========================")
 
     plan_size = dict()

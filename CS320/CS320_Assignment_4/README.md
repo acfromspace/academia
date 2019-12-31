@@ -1,4 +1,4 @@
-# Assignment #4, AC De Leon
+# Assignment #4, kingofthenorth
 > Introductory Python Program
 
 Goal is to familiarize with Python.

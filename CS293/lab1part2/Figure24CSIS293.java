@@ -2,9 +2,9 @@
 
 package lab1part2;
 
-public class Figure24CSIS293 {
-
-	public static void main(String[] args)
+public class Figure24CSIS293
+{
+	public static void main(String[] args) 
 	{
 		System.out.println("Welcome\nto\nJava\nProgramming!");
 	}

@@ -1,6 +1,6 @@
 /* 
- * @author Andrew De Leon
- * @authorid 819470542
+ * @author kingofthenorth
+ * @authorid 123456789
 */
 
 package dns_resolver;

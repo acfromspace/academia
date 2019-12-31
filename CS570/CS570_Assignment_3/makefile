@@ -1,6 +1,6 @@
 # HOW TO USE
-# In your terminal, change directory to a3 (if you do not have one, make one w/ mkdir a1)
-# Check to see if you have a3.c, a3.h, and main.c within the folder before you proceed
+# In your terminal, change directory to a3 (if you do not have one, make one w/ mkdir a1).
+# Check to see if you have a3.c, a3.h, and main.c within the folder before you proceed.
 #
 # TERMINAL COMMANDS
 # make -> creates the executable (player.exe)

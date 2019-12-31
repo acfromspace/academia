@@ -6,8 +6,8 @@ import java.util.NoSuchElementException;
 import data_structures.Hash.HashElement;
 
 /*
- * @author Andrew De Leon
- * @authorid 819470542
+ * @author kingofthenorth
+ * @authorid 123456789
  * 
  * Six rules for a red-black tree:
  * 

@@ -1,4 +1,4 @@
-# @author       acfromspace
+# @author       kingofthenorth
 # @filename     driver.py
 # @description  Assignment 1
 # @class        CS 550
@@ -10,7 +10,7 @@ from boardtypes import TileBoard
 def driver():
 
     print("============================= TileBoard Game =============================")
-    print("CS 550 Artifical Intelligence | Prof. Roch | Assignment 1 | Andrew De Leon")
+    print("CS 550 Artifical Intelligence | Prof. Roch | Assignment 1 | kingofthenorth")
     print("======================= Creating solvable board... =======================")
     size = 8  # Hardcoded size.
 

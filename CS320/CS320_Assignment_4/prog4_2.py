@@ -1,7 +1,7 @@
 import StackMachine
 import sys
 
-print("Assignment #4-2, Andrew Christopher De Leon, andrewchristopherdeleon@gmail.com")
+print("Assignment #4-2, kingofthenorth, kingofthenorth@gmail.com")
 fileName = open(sys.argv[1])
 answer = StackMachine.StackMachine()
 for line in fileName.readlines():

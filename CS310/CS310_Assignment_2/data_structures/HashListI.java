@@ -10,8 +10,8 @@ import java.util.Iterator;
  * first and remove last! This interface describes
  * just those methods we need.
  *
- * @author Andrew De Leon
- * @authorid 819470542
+ * @author kingofthenorth
+ * @authorid 123456789
  * 
  */
 public interface HashListI<E> extends Iterable<E> {

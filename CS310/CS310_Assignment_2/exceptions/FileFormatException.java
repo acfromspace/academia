@@ -9,8 +9,8 @@ package exceptions;
  *  
  * Most of the work in the file format exception can be handled by the super class!
  *  
- * @author Andrew De Leon
- * @authorid 819470542
+ * @author kingofthenorth
+ * @authorid 123456789
  * 
  * Code demonstrated 10/27/2016
  * 

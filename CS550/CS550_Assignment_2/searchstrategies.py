@@ -1,4 +1,4 @@
-# @author       acfromspace
+# @author       kingofthenorth
 # @filename     searchstrategies.py
 # @description  Assignment 2
 # @class        CS 550

@@ -19,7 +19,7 @@ import exceptions.FileFormatException;
  * If there is an error with the file format, you should throw a new FileFormatException error
  * with an appropriate message.
  *  
- * @author Andrew De Leon
+ * @author kingofthenorth
  *
  */
 

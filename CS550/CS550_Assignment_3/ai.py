@@ -1,4 +1,4 @@
-# @author       acfromspace
+# @author       kingofthenorth
 # @filename     ai.py
 # @description  Assignment 3
 # @class        CS 550

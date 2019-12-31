@@ -1,4 +1,4 @@
-# @author       acfromspace
+# @author       kingofthenorth
 # @filename     constraint_prop.py
 # @description  Assignment 4
 # @class        CS 550

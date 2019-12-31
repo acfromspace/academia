@@ -1,5 +1,3 @@
-// a1.c
-
 #include "a1.h"
 #include <stdio.h>
 #include <semaphore.h>
@@ -15,23 +13,23 @@ pid_t pid;
 int main(int argc, const char *argv[])
 {
 
-  // Create file, print PID, close
+  // Create file, print PID, close.
   fp = fopen("STACK.txt", "w");
   pid = getpid();
   fprintf(fp, "PID: %d\n", pid);
   fclose(fp);
 
-  // Create semaphore
+  // Create semaphore.
   sem_init(&FLAG, 0, 4);
 
-  //array for thread ids
+  // Array for thread ids.
   int i[4];
   i[0] = 0;
   i[1] = 1;
   i[2] = 2;
   i[3] = 3;
 
-  // Create threads
+  // Create threads.
   pthread_t thread1;
   pthread_t thread2;
   pthread_t thread3;
@@ -57,12 +55,12 @@ void thread_task(void *ptr)
 {
 
   int thID;
-  thID = *((int *)ptr); // Cast from thread ID from pointer to int
+  thID = *((int *)ptr); // Cast from thread ID from pointer to int.
 
   int startDelay;
   char *suit = malloc(10);
 
-  // Set suit and time delay for each thread
+  // Set suit and time delay for each thread.
   if (thID == 1)
   {
     strcpy(suit, "Diamond");
@@ -115,6 +113,6 @@ void thread_task(void *ptr)
     sem_post(&FLAG);
   }
 
-  // Frees unused whitespaces to prevent memory leaks
+  // Frees unused whitespaces to prevent memory leaks.
   free(suit);
 }

@@ -1,9 +1,8 @@
-package lab3part1;
+// Date : February 27, 2014
+// Project: Problem 4.17 Part B
+// Description: Input the miles driven and gallons used for each trip.
 
-//Author: Andrew Christopher De Leon
-//Date : February 27, 2014
-//Project: Problem 4.17 Part B
-//Description: Input the miles driven and gallons used for each trip.
+package lab3part1;
 
 public class GasTankTest 
 {
@@ -11,5 +10,5 @@ public class GasTankTest
 	{
 		GasTank application = new GasTank();
 		application.calculateMPG();
-	} // End 'main'
-} // End 'class' GasTankTest
+	}
+}

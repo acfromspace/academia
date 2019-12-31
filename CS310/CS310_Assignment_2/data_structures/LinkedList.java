@@ -14,8 +14,8 @@ import data_structures.LinkedList.Node;
  * methods in the HashListI interface, a reduced set of
  * methods compared to the linked list from Assignment 1.
  * 
- * @author Andrew De Leon
- * @authorid 819470542
+ * @author kingofthenorth
+ * @authorid 123456789
  * 
  * Reuse methods from Assignment 1 and modified them.
  *

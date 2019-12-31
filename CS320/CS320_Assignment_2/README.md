@@ -1,4 +1,4 @@
-# Assignment #2, AC De Leon
+# Assignment #2, kingofthenorth
 > Introductory C++ program
 
 Goal is to familiarize you with C++ while implementing a basic stack machine.

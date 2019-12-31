@@ -1,4 +1,4 @@
-# @author       acfromspace
+# @author       kingofthenorth
 # @filename     backtrack.py
 # @description  Assignment 4
 # @class        CS 550

@@ -1,4 +1,4 @@
-# @author       acfromspace
+# @author       kingofthenorth
 # @filename     checkers.py
 # @description  Assignment 3
 # @class        CS 550
@@ -67,7 +67,7 @@ def Game(red=ai.Strategy, black=tonto.Strategy,
     # e.g. black('b', checkerboard.CheckerBoard, maxplies)
 
     print("================================ Checkers =================================")
-    print("CS 550 Artificial Intelligence | Prof. Roch | Assignment 3 | Andrew De Leon")
+    print("CS 550 Artificial Intelligence | Prof. Roch | Assignment 3 | kingofthenorth")
     print("============================= Creating game... ============================")
 
     game_board = checkerboard.CheckerBoard()

@@ -14,7 +14,7 @@ using namespace std;
 
 int main(int argc, char** agrv) {
 
-    cout << "Assignment #3-3, Andrew Christopher De Leon, andrewchristopherdeleon@gmail.com";
+    cout << "Assignment #3-3, kingofthenorth, kingofthenorth@gmail.com";
 
     string s;
 

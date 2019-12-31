@@ -1,7 +1,7 @@
 # README.md
 
 **CS 570 Summer 2018**<br>
-**Names:** Josh Villanueva, Anthony Savitt, Andrew Christopher De Leon<br>
+**Names:** Josh Villanueva, Anthony Savitt, kingofthenorth<br>
 **Class usernames:** cssc1074, cssc1067, & cssc1066 (respectively)
 
 ## Assignment #1, Deck of Cards w/ Multiple Threads

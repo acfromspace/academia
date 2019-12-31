@@ -14,7 +14,7 @@ using namespace std;
 
 int main(int argc, char** agrv) {
 
-    cout << "Assignment #3-1, Andrew Christopher De Leon, andrewchristopherdeleon@gmail.com\n";
+    cout << "Assignment #3-1, kingofthenorth, kingofthenorth@gmail.com\n";
 
     // create a new lua state
     lua_State *Environment = luaL_newstate();

@@ -1,2 +1,2 @@
-# Assignment #0, AC De Leon
+# Assignment #0, kingofthenorth
 > Entry Assignment

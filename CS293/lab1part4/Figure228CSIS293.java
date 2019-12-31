@@ -1,11 +1,11 @@
+// Fig. 2.28: Diameter, Circumference and Area of a Circle.
+
 package lab1part4;
 
 import java.util.Scanner;
 
-// Fig. 2.28: Diameter, Circumference and Area of a Circle.
-
-public class Figure228CSIS293 {
-
+public class Figure228CSIS293
+{
 	private static Scanner input;
 
 	public static void main(String[] args) 

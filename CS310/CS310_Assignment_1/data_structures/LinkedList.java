@@ -1,4 +1,4 @@
-/* @author Andrew De Leon
+/* @author kingofthenorth
  * @description Assignment1
  * @class CS 310
  * @instructor Edwards

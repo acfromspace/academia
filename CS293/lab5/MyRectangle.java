@@ -1,14 +1,12 @@
 package lab5;
 
-//Author: Andrew Christopher De Leon
-
 import java.awt.Color;
 import java.awt.Graphics;
 import java.util.Random;
 
 public class MyRectangle 
 {
-	// Declarations
+	// Declarations.
 	private Random randomNumbers = new Random();
 	private int x1 = randomNumbers.nextInt( 300 );
 	private int y1 = randomNumbers.nextInt( 300 );

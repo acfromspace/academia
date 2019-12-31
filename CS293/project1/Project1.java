@@ -1,7 +1,5 @@
 package project1;
 
-//Author: Andrew Christopher De Leon
-
 public class Project1 
 {
 
@@ -12,7 +10,6 @@ public class Project1
 		int spaces;
 		String diamondString = "";
 		
-		//Top first 5 lines
 		for ( row = 1; row <= 5; row++ )
 		{
 			for ( spaces = 5; spaces > row; spaces-- )
@@ -24,7 +21,6 @@ public class Project1
 			diamondString += "\n";
 		}
 		
-		//Bottom last 4 lines
 		for ( row = 4; row >= 1; row-- )
 		{
 			for ( spaces = 5; spaces > row; spaces -- )
@@ -35,12 +31,7 @@ public class Project1
 					
 			diamondString += "\n";
 		}
-		
-		//Output result
 		System.out.println ( diamondString );
-		
-		System.exit(0);
-		
-	} //End void
-	
-} //End class project 1
+		System.exit(0);	
+	}
+}

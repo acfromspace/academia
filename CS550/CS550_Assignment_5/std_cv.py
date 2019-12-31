@@ -1,4 +1,4 @@
-# @author       acfromspace
+# @author       kingofthenorth
 # @filename     std_cv.py
 # @description  Assignment 5
 # @class        CS 550

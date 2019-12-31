@@ -1,4 +1,4 @@
-# @author       acfromspace
+# @author       kingofthenorth
 # @filename     driver.py
 # @description  Assignment 4
 # @class        CS 550
@@ -14,7 +14,7 @@ from backtrack import backtracking_search
 import time
 
 """
-Author: Andrew De Leon
+Author: kingofthenorth
 Description: CS 550, Assignment #4
 """
 
@@ -42,7 +42,7 @@ def elapsed(earlier, later):
 
 def game():
     print("================================= Sudoku ==================================")
-    print("CS 550 Artificial Intelligence | Prof. Roch | Assignment 4 | Andrew De Leon")
+    print("CS 550 Artificial Intelligence | Prof. Roch | Assignment 4 | kingofthenorth")
     print("============================= Creating game... ============================")
 
     game_start = time.time()

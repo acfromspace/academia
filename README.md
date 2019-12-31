@@ -1,7 +1,7 @@
 <!-- HEADING -->
 
 <p align="center">
-  <img src="./avatar.png" width="60">
+  <img src="https://user-images.githubusercontent.com/10361542/71635438-7e97da00-2bd9-11ea-9940-8a42bd798a00.png" width="60">
 </p>
 <h1 align="center">academia</h1>
 
@@ -41,18 +41,6 @@
 - Change directory `cd academia`
 - Go forth and dive in to learn!
 
-<!-- IN-DEPTH GUIDE -->
-
-<!-- ## <span role="img" aria-label="Rocket">🚀</span> Putting this in the Infinity Gauntlet (In-Depth Guide)
-
-OR
-
-## <span role="img" aria-label="Video Game">🎮</span> Controls
-
-```txt
-CONTROLS HERE
-``` -->
-
 <!-- WHAT'S INSIDE? -->
 
 ## <span role="img" aria-label="Thinking Face">🤔</span> What's inside?
@@ -60,17 +48,16 @@ CONTROLS HERE
 A quick look at the top-level files and directories you'll see in this project.
 
 ```
-   .
-1  ├── CS293/
-2  ├── CS296/
-3  ├── CS310/
-4  ├── CS320/
-5  ├── CS550/
-6  ├── CS560/
-7  ├── CS570/
-8  ├── avatar.png
-9  ├── LICENSE   
-10 └── README.md
+  .
+1 ├── CS293/
+2 ├── CS296/
+3 ├── CS310/
+4 ├── CS320/
+5 ├── CS550/
+6 ├── CS560/
+7 ├── CS570/
+8 ├── LICENSE   
+9 └── README.md
 ```
 
 1.  **`CS293/`**: Java Programming.
@@ -80,9 +67,8 @@ A quick look at the top-level files and directories you'll see in this project.
 5.  **`CS550/`**: Artificial Intelligence.
 6.  **`CS560/`**: Algorithms.
 7.  **`CS570/`**: Operating Systems.
-8.  **`avatar.png`**: Image used in the README.md.
-9.  **`LICENSE`**: An open source license that protects contributors and users depending on the license chosen.
-10. **`README.md`**: A markdown file containing useful reference information about your project. The file you're reading right now!
+8.  **`LICENSE`**: An open source license that protects contributors and users depending on the license chosen.
+9. **`README.md`**: A markdown file containing useful reference information about your project. The file you're reading right now!
 
 <!-- LICENSE -->
 

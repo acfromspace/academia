@@ -1,7 +1,6 @@
-package lab5;
+// Fig. 8.20.
 
-//Author: Andrew Christopher De Leon
-//Fig. 8.20
+package lab5;
 
 import javax.swing.JFrame;
 

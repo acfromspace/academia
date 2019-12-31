@@ -1,6 +1,6 @@
 /*
- * @author Andrew De Leon
- * @authorid 819470542
+ * @author kingofthenorth
+ * @authorid 123456789
  * 
  * For null pointer exceptions use:
  * 
@@ -56,7 +56,7 @@ public class TimeHashRBTree {
 		}
 		
 		// Add Hash
-		long startAndrewHashAdd = System.currentTimeMillis();
+		long startSweetHashAdd = System.currentTimeMillis();
 		
 		try {
 			input = new BufferedReader(new FileReader("src/data/top-250k.ip"));
@@ -72,25 +72,25 @@ public class TimeHashRBTree {
 			System.err.println(e);
 		}
 		
-		long stopAndrewHashAdd = System.currentTimeMillis();
+		long stopSweetHashAdd = System.currentTimeMillis();
 		
-		System.out.println("Add with hash: " + (stopAndrewHashAdd - startAndrewHashAdd) + " milliseconds");
+		System.out.println("Add with hash: " + (stopSweetHashAdd - startSweetHashAdd) + " milliseconds");
 		
 		// Search hash
-		long startAndrewHashSearch = System.currentTimeMillis();
+		long startSweetHashSearch = System.currentTimeMillis();
 		
 		for(IPAddress ip:list)
 			hash.contains(ip);
 		
-		long stopAndrewHashSearch = System.currentTimeMillis();
+		long stopSweetHashSearch = System.currentTimeMillis();
 		
-		System.out.println("Search with hash: " + (stopAndrewHashSearch - startAndrewHashSearch) + " milliseconds\n");
+		System.out.println("Search with hash: " + (stopSweetHashSearch - startSweetHashSearch) + " milliseconds\n");
 		
 		// Clear memory
 		hash = null;
 		
 		// Add RBT
-		long startAndrewRBTAdd = System.currentTimeMillis();
+		long startSweetRBTAdd = System.currentTimeMillis();
 		
 		try {
 			input = new BufferedReader(new FileReader("src/data/top-250k.ip"));
@@ -106,19 +106,19 @@ public class TimeHashRBTree {
 			System.err.println(e);
 		}
 		
-		long stopAndrewRBTAdd = System.currentTimeMillis();
+		long stopSweetRBTAdd = System.currentTimeMillis();
 		
-		System.out.println("Add with RBT: " + (stopAndrewRBTAdd - startAndrewRBTAdd) + " milliseconds");
+		System.out.println("Add with RBT: " + (stopSweetRBTAdd - startSweetRBTAdd) + " milliseconds");
 		
 		// Search RBT
-		long startAndrewRBTSearch = System.currentTimeMillis();
+		long startSweetRBTSearch = System.currentTimeMillis();
 		
 		for(IPAddress ip : list)
 			rbt.getValue(ip);
 
-		long stopAndrewRBTSearch = System.currentTimeMillis();
+		long stopSweetRBTSearch = System.currentTimeMillis();
 		
-		System.out.println("Search with RBT: " + (stopAndrewRBTSearch - startAndrewRBTSearch) + " milliseconds\n");
+		System.out.println("Search with RBT: " + (stopSweetRBTSearch - startSweetRBTSearch) + " milliseconds\n");
 
 		// Add Java's hash
 		long startJavaHashAdd = System.currentTimeMillis();

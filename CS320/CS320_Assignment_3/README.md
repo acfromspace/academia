@@ -1,4 +1,4 @@
-# Assignment #3, AC De Leon
+# Assignment #3, kingofthenorth
 > Lua implementation with C/C++
 
 Goal is to familiarize with Lua while working with C/C++.
