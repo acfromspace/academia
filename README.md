@@ -37,9 +37,10 @@
 
 ## <span role="img" aria-label="Sparkles">✨</span> Quick Installation
 
-- Clone the repo `git clone https://github.com/acfromspace/academia`
-- Change directory `cd academia`
-- Go forth and dive in to learn!
+```
+git clone https://github.com/acfromspace/academia
+cd academia
+```
 
 <!-- WHAT'S INSIDE? -->
 
